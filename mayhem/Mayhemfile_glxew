@@ -1,0 +1,10 @@
+project: savantenvs/glew
+target: glxew
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/glxew/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_glxew
+    libfuzzer: true
+    timeout: 5
+    dictionary: /mayhem/mayhem/glxew/glxew.dict

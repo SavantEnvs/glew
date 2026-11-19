@@ -1,0 +1,10 @@
+project: savantenvs/glew
+target: eglew
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/eglew/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_eglew
+    libfuzzer: true
+    timeout: 5
+    dictionary: /mayhem/mayhem/eglew/eglew.dict

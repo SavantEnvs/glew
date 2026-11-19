@@ -1,0 +1,10 @@
+project: savantenvs/glew
+target: glew-init
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/glew-init/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_glew_init
+    libfuzzer: true
+    timeout: 5
+    dictionary: /mayhem/mayhem/glew-init/glew-init.dict

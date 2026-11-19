@@ -1,0 +1,4 @@
+4.6
+GL_ARB_multitexture
+GLX_ARB_create_context GLX_EXT_swap_control GLX_SGI_swap_control
+GLX_ARB_create_context GLX_VERSION_1_4

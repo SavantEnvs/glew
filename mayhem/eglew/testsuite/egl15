@@ -1,0 +1,4 @@
+4.6
+GL_KHR_debug
+EGL_KHR_image_base EGL_EXT_platform_base EGL_KHR_fence_sync
+EGL_KHR_image_base EGL_VERSION_1_5

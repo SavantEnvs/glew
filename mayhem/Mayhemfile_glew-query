@@ -1,0 +1,10 @@
+project: savantenvs/glew
+target: glew-query
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/glew-query/testsuite
+cmds:
+  - cmd: /mayhem/out/fuzz_glew_query
+    libfuzzer: true
+    timeout: 5
+    dictionary: /mayhem/mayhem/glew-query/glew-query.dict
